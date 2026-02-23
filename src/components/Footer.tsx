@@ -15,7 +15,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Donate CTA Banner */}
-        <div className="bg-red-600 rounded-lg p-8 mb-12 text-center">
+        <div className="bg-gray-900 rounded-lg p-8 mb-12 text-center">
           <h3 className="mb-4 text-white">Support Our Mission</h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
             Your donation helps provide essential needs to single mothers and vulnerable children in Uganda. Every contribution makes a difference.
@@ -29,8 +29,8 @@ export function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logoImage} alt="Sanyu for the Needy" className="h-10 w-auto" />
-              <span className="text-lg">Sanyu for the Needy</span>
+              <img src={logoImage} alt="Sanyu for the Needy" className="h-32 w-auto" />
+              <span className="text-4xl">Sanyukako</span>
             </div>
             <p className="text-gray-400 text-sm">
               Bringing happiness and hope to single mothers and vulnerable children in Uganda. Sanyu means happiness in Luganda.
