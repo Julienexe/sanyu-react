@@ -2128,3 +2128,21 @@ html {
   inherits: false;
   initial-value: 0;
 }
+
+@media (max-width: 1023px) {
+  .navbar-logo {
+    height: 3rem !important;
+  }
+  .navbar-text {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-logo {
+    height: 10rem !important;
+  }
+  .navbar-text {
+    font-size: 2.25rem !important;
+  }
+}

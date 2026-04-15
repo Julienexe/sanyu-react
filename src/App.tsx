@@ -9,6 +9,11 @@ import { BlogPage } from './pages/BlogPage';
 import { EventsPage } from './pages/EventsPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { VolunteeringPage } from './pages/VolunteeringPage';
+import { VisionPage } from './pages/VisionPage';
+import { ImpactPage } from './pages/ImpactPage';
+import { MissionPage } from './pages/MissionPage';
+import { PartnersPage } from './pages/PartnersPage';
+import { AboutPage } from './pages/AboutPage';
 
 export default function App() {
   return (
@@ -24,6 +29,11 @@ export default function App() {
           <Route path="/volunteering" element={<VolunteeringPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/vision" element={<VisionPage />} />
+          <Route path="/impact" element={<ImpactPage />} />
+          <Route path="/mission" element={<MissionPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layout>
     </Router>

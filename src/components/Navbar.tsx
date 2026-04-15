@@ -1,41 +1,28 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logoImage from "../assets/logo.png";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
-
-  const isHomePage = location.pathname === "/";
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-    setMobileMenuOpen(false);
-  };
+  const [aboutMenuOpen, setAboutMenuOpen] = useState(false);
+  const [volunteerMenuOpen, setVolunteerMenuOpen] = useState(false);
 
   return (
-    <nav
-      className={
-        isHomePage
-          ? "absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/70 to-transparent"
-          : "bg-gray-900 sticky top-0 z-50 shadow-lg"
-      }
-    >
+    <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-6">
           <Link to="/" className="flex items-center gap-3">
             <img
               src={logoImage}
               alt="Sanyu for the Needy"
-              className="h-32 w-auto"
+              className="navbar-logo w-auto"
             />
             <span>
-              <span className="text-red-600 text-4xl">
+              <span className="text-red-600 navbar-text">
                 Sanyukako
               </span>
-              <span className="text-white text-4xl">
+              <span className="text-white navbar-text">
                 <br />Foundation
                 Uganda
               </span>
@@ -45,47 +32,82 @@ export function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 items-center">
-            {isHomePage ? (
-              <>
-                <button
-                  onClick={() => scrollToSection("mission")}
-                  className="text-white hover:text-red-400 transition-colors"
-                >
-                  Mission
-                </button>
-                <button
-                  onClick={() => scrollToSection("vision")}
-                  className="text-white hover:text-red-400 transition-colors"
-                >
-                  Vision
-                </button>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-white hover:text-red-400 transition-colors"
-                >
-                  About Us
-                </button>
-                <button
-                  onClick={() => scrollToSection("impact")}
-                  className="text-white hover:text-red-400 transition-colors"
-                >
-                  Our Impact
-                </button>
-              </>
-            ) : (
-              <Link
-                to="/"
-                className="text-white hover:text-red-400 transition-colors"
-              >
-                Home
-              </Link>
-            )}
             <Link
-              to="/team"
+              to="/"
               className="text-white hover:text-red-400 transition-colors"
             >
-              Our Team
+              Home
             </Link>
+            <div
+              className="relative"
+              onMouseEnter={() => setAboutMenuOpen(true)}
+              onMouseLeave={() => setAboutMenuOpen(false)}
+            >
+              <Link
+                to="/about"
+                className="text-white hover:text-red-400 transition-colors flex items-center gap-1"
+              >
+                About Us
+                <ChevronDown className="w-4 h-4" />
+              </Link>
+              {aboutMenuOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                  <Link
+                    to="/mission"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Mission
+                  </Link>
+                  <Link
+                    to="/vision"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Vision
+                  </Link>
+                  <Link
+                    to="/team"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Our Team
+                  </Link>
+                  <Link
+                    to="/impact"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Our Impact
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setVolunteerMenuOpen(true)}
+              onMouseLeave={() => setVolunteerMenuOpen(false)}
+            >
+              <Link
+                to="/volunteering"
+                className="text-white hover:text-red-400 transition-colors flex items-center gap-1"
+              >
+                Volunteer
+                <ChevronDown className="w-4 h-4" />
+              </Link>
+              {volunteerMenuOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                  <Link
+                    to="/volunteering"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Volunteer Info
+                  </Link>
+                  <Link
+                    to="/partners"
+                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Partners
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link
               to="/blog"
               className="text-white hover:text-red-400 transition-colors"
@@ -103,12 +125,6 @@ export function Navbar() {
               className="text-white hover:text-red-400 transition-colors"
             >
               Gallery
-            </Link>
-            <Link
-              to="/volunteering"
-              className="text-white hover:text-red-400 transition-colors"
-            >
-              Volunteer
             </Link>
             <Link
               to="/contact"
@@ -136,50 +152,69 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-6 flex flex-col gap-4 bg-black/50 p-8">
-            {isHomePage ? (
-              <>
-                <button
-                  onClick={() => scrollToSection("mission")}
-                  className="text-white hover:text-red-400 transition-colors text-left"
-                >
-                  Mission
-                </button>
-                <button
-                  onClick={() => scrollToSection("vision")}
-                  className="text-white hover:text-red-400 transition-colors text-left"
-                >
-                  Vision
-                </button>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-white hover:text-red-400 transition-colors text-left"
-                >
-                  About Us
-                </button>
-                <button
-                  onClick={() => scrollToSection("impact")}
-                  className="text-white hover:text-red-400 transition-colors text-left"
-                >
-                  Our Impact
-                </button>
-              </>
-            ) : (
-              <Link
-                to="/"
-                className="text-white hover:text-red-400 transition-colors text-left"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </Link>
-            )}
+          <div className="md:hidden pb-6 flex flex-col gap-4 bg-gray-900 p-8">
             <Link
-              to="/team"
+              to="/"
               className="text-white hover:text-red-400 transition-colors text-left"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Our Team
+              Home
             </Link>
+            <span className="text-gray-400 text-sm">About Us</span>
+            <div className="pl-4 flex flex-col gap-2">
+              <Link
+                to="/about"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About Us
+              </Link>
+              <Link
+                to="/mission"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Mission
+              </Link>
+              <Link
+                to="/vision"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Vision
+              </Link>
+              <Link
+                to="/team"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Our Team
+              </Link>
+              <Link
+                to="/impact"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Our Impact
+              </Link>
+            </div>
+            <span className="text-gray-400 text-sm">Volunteer</span>
+            <div className="pl-4 flex flex-col gap-2">
+              <Link
+                to="/volunteering"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Volunteer Info
+              </Link>
+              <Link
+                to="/partners"
+                className="text-white hover:text-red-400 transition-colors text-left"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Partners
+              </Link>
+            </div>
             <Link
               to="/blog"
               className="text-white hover:text-red-400 transition-colors text-left"
@@ -200,13 +235,6 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Gallery
-            </Link>
-            <Link
-              to="/volunteering"
-              className="text-white hover:text-red-400 transition-colors text-left"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Volunteer
             </Link>
             <Link
               to="/contact"
