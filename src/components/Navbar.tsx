@@ -10,7 +10,7 @@ export function Navbar() {
 
   return (
     <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full ">
         <div className="flex justify-between items-center py-6">
           <Link to="/" className="flex items-center gap-3">
             <img
@@ -18,20 +18,20 @@ export function Navbar() {
               alt="Sanyu for the Needy"
               className="navbar-logo w-auto"
             />
-            <span>
-              <span className="text-red-600 navbar-text">
+            <span className="navbar-text">
+              <span className="text-red-600 sanyukako">
                 Sanyukako
               </span>
-              <span className="text-white navbar-text">
-                <br />Foundation
+              <span className="text-white other-text"> Foundation
                 Uganda
               </span>
+
             </span>
-            
+
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-8 items-center">
+          <div className="hidden md:flex gap-8 items-center desktop-menu-offset">
             <Link
               to="/"
               className="text-white hover:text-red-400 transition-colors"

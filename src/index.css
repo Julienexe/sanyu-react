@@ -520,6 +520,10 @@
     margin-inline: auto;
   }
 
+  .mx-5{
+    margin-inline: calc(var(--spacing) * 5);
+  }
+
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -2134,7 +2138,7 @@ html {
     height: 3rem !important;
   }
   .navbar-text {
-    font-size: 1.25rem !important;
+    font-size: 1.0rem !important;
   }
 }
 
@@ -2143,6 +2147,24 @@ html {
     height: 10rem !important;
   }
   .navbar-text {
-    font-size: 2.25rem !important;
+    font-size: 2.5rem !important;
   }
 }
+
+.other-text{
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+}
+
+.sanyukako {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.desktop-menu-offset {
+  margin-left: 5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
