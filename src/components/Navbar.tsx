@@ -18,7 +18,7 @@ export function Navbar() {
               alt="Sanyu for the Needy"
               className="navbar-logo w-auto"
             />
-            <span className="navbar-text">
+            <span className="navbar-text d-flex">
               <span className="text-red-600 sanyukako">
                 Sanyukako
               </span>

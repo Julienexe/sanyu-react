@@ -2135,9 +2135,13 @@ html {
 
 @media (max-width: 1023px) {
   .navbar-logo {
-    height: 3rem !important;
+    height: 4.0rem !important;
+    margin-left: 5px;
   }
   .navbar-text {
+    font-size: 1.5rem !important;
+  }
+  .other-text {
     font-size: 1.0rem !important;
   }
 }
@@ -2145,18 +2149,25 @@ html {
 @media (min-width: 1024px) {
   .navbar-logo {
     height: 10rem !important;
+    margin-left: 10px;
   }
   .navbar-text {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
+}
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
 }
 
 .other-text{
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sanyukako {
-  font-family: 'Inter', sans-serif;
+  font-family: "Playfair Display",serif;
   font-weight: 700;
 }
 
