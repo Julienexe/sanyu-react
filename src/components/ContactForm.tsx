@@ -52,7 +52,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="mb-1">Our Locations</h4>
-                  <p className="text-gray-600">Masaka & Kampala, Uganda</p>
+                  <p className="text-gray-600">Springville Building, Next to St. Savio Junior Kikuusa Campus Namulanda</p>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="mb-1">Call Us</h4>
-                  <p className="text-gray-600">+256 XXX XXX XXX</p>
+                  <p className="text-gray-600">+256 765 399 663</p>
                 </div>
               </div>
             </div>

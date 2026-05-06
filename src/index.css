@@ -2139,10 +2139,10 @@ html {
     margin-left: 5px;
   }
   .navbar-text {
-    font-size: 1.5rem !important;
+    font-size: 2.0rem !important;
   }
   .other-text {
-    font-size: 1.0rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -2162,7 +2162,7 @@ html {
 }
 
 .other-text{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
