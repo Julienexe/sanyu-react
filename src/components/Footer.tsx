@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImage from 'figma:asset/57b855ed8a5d3add1b5bed5792f6f0076a9c5393.png';
+import logoImage from '../assets/sanyu-logo.svg';
 
 export function Footer() {
   const location = useLocation();

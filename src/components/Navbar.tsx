@@ -1,7 +1,7 @@
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logoImage from "../assets/logo.png";
+import logoImage from "../assets/sanyu-logo.svg";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
