@@ -52,28 +52,28 @@ export function Navbar() {
               </Link>
               {aboutMenuOpen && (
                 <div className="absolute top-full left-0 w-64 pt-2">
-                  <div className="bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                  <div className="bg-gray-900 rounded-md shadow-lg p-3 border border-gray-700 flex flex-col gap-1">
                     <Link
                       to="/mission"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Mission
                     </Link>
                     <Link
                       to="/vision"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Vision
                     </Link>
                     <Link
                       to="/team"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Our Team
                     </Link>
                     <Link
                       to="/impact"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Our Impact
                     </Link>
@@ -95,16 +95,16 @@ export function Navbar() {
               </Link>
               {volunteerMenuOpen && (
                 <div className="absolute top-full left-0 w-64 pt-2">
-                  <div className="bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                  <div className="bg-gray-900 rounded-md shadow-lg p-3 border border-gray-700 flex flex-col gap-1">
                     <Link
                       to="/volunteering"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Volunteer Info
                     </Link>
                     <Link
                       to="/partners"
-                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                      className="block rounded-md px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
                     >
                       Partners
                     </Link>
