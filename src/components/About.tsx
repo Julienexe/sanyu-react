@@ -33,7 +33,7 @@ export function About() {
             </div>
 
             <p className="text-gray-700">
-              Sanyu for the Needy started working in Uganda in
+              Sanyukako started working in Uganda in
               2024 by assisting communities in central Uganda to
               acquire basic needs like clothes, shoes, and
               books. This was mainly done in Masaka which later

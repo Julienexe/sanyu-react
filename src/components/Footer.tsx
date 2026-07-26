@@ -29,7 +29,7 @@ export function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logoImage} alt="Sanyu for the Needy" className="h-32 w-auto" />
+              <img src={logoImage} alt="Sanyukako" className="h-32 w-auto" />
               <span className="text-4xl">Sanyukako</span>
             </div>
             <p className="text-gray-400 text-sm">
@@ -139,7 +139,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Sanyu for the Needy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sanyukako. All rights reserved.</p>
         </div>
       </div>
     </footer>

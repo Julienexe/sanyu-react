@@ -12,21 +12,21 @@ export function TermsAndConditions() {
           <div>
             <h3 className="text-red-600 mb-4">1. Introduction</h3>
             <p className="text-gray-700">
-              Welcome to Sanyu for the Needy. These terms and conditions outline the rules and regulations for the use of our website and services. By accessing this website, we assume you accept these terms and conditions. Do not continue to use our website if you do not agree to all of the terms and conditions stated on this page.
+              Welcome to Sanyukako. These terms and conditions outline the rules and regulations for the use of our website and services. By accessing this website, we assume you accept these terms and conditions. Do not continue to use our website if you do not agree to all of the terms and conditions stated on this page.
             </p>
           </div>
 
           <div>
             <h3 className="text-red-600 mb-4">2. About Our Organization</h3>
             <p className="text-gray-700">
-              Sanyu for the Needy is a charitable organization dedicated to supporting single mothers and vulnerable children in Uganda. We operate primarily in Masaka and Kampala, providing essential needs such as clothing, shoes, books, and healthcare support.
+              Sanyukako is a charitable organization dedicated to supporting single mothers and vulnerable children in Uganda. We operate primarily in Masaka and Kampala, providing essential needs such as clothing, shoes, books, and healthcare support.
             </p>
           </div>
 
           <div>
             <h3 className="text-red-600 mb-4">3. Donations</h3>
             <p className="text-gray-700 mb-4">
-              All donations made to Sanyu for the Needy are voluntary contributions to support our charitable work. By making a donation, you agree to the following:
+              All donations made to Sanyukako are voluntary contributions to support our charitable work. By making a donation, you agree to the following:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Donations are non-refundable unless required by law</li>
@@ -59,14 +59,14 @@ export function TermsAndConditions() {
           <div>
             <h3 className="text-red-600 mb-4">6. Intellectual Property</h3>
             <p className="text-gray-700">
-              Unless otherwise stated, Sanyu for the Needy owns the intellectual property rights for all material on this website. All content, including text, images, and logos, is protected by copyright and may not be reproduced without permission.
+              Unless otherwise stated, Sanyukako owns the intellectual property rights for all material on this website. All content, including text, images, and logos, is protected by copyright and may not be reproduced without permission.
             </p>
           </div>
 
           <div>
             <h3 className="text-red-600 mb-4">7. Limitation of Liability</h3>
             <p className="text-gray-700">
-              While we strive to provide accurate and up-to-date information, Sanyu for the Needy makes no warranties or representations regarding the completeness or accuracy of information on this website. We shall not be liable for any indirect or consequential loss arising from the use of this website.
+              While we strive to provide accurate and up-to-date information, Sanyukako makes no warranties or representations regarding the completeness or accuracy of information on this website. We shall not be liable for any indirect or consequential loss arising from the use of this website.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export function TermsAndConditions() {
           <div>
             <h3 className="text-red-600 mb-4">9. Changes to Terms</h3>
             <p className="text-gray-700">
-              Sanyu for the Needy reserves the right to revise these terms and conditions at any time. By continuing to use this website after changes are posted, you agree to be bound by the revised terms.
+              Sanyukako reserves the right to revise these terms and conditions at any time. By continuing to use this website after changes are posted, you agree to be bound by the revised terms.
             </p>
           </div>
 

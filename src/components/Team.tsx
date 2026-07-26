@@ -17,7 +17,7 @@ export function Team() {
     {
       name: "Mr. Edron",
       role: "Founder & Executive Director",
-      bio: "Inspired by his late grandmother Sanyu and his own experiences growing up with a single mother, Edron founded Sanyu for the Needy to bring hope and support to vulnerable families. His vision drives our mission to create lasting change in communities across Uganda.",
+      bio: "Inspired by his late grandmother Sanyu and his own experiences growing up with a single mother, Edron founded Sanyukako to bring hope and support to vulnerable families. His vision drives our mission to create lasting change in communities across Uganda.",
       image: edro,
       email: "edron@sanyufoundation.org"
     },

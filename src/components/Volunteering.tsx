@@ -61,7 +61,7 @@ export function Volunteering() {
             <h2 className="mb-4 text-red-600">Volunteer With Us</h2>
             <div className="w-20 h-1 bg-red-600 mx-auto mb-8" />
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Volunteers are the heartbeat of Sanyu for the Needy. Whether you're in Uganda or anywhere else in the world, your time, skills, and passion can create meaningful change in the lives of single mothers and vulnerable children.
+              Volunteers are the heartbeat of Sanyukako. Whether you're in Uganda or anywhere else in the world, your time, skills, and passion can create meaningful change in the lives of single mothers and vulnerable children.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export function Volunteering() {
                 <Users className="w-10 h-10 text-red-600" />
               </div>
               <p className="text-gray-700 italic mb-4">
-                "Volunteering with Sanyu for the Needy has been one of the most rewarding experiences of my life. Seeing the hope and resilience of the mothers we support inspires me every day. It's not just about giving—it's about being part of a community working toward real, lasting change."
+                "Volunteering with Sanyukako has been one of the most rewarding experiences of my life. Seeing the hope and resilience of the mothers we support inspires me every day. It's not just about giving—it's about being part of a community working toward real, lasting change."
               </p>
               <p className="text-red-600">— Sarah, Local Volunteer</p>
             </div>

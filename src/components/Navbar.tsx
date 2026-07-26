@@ -15,7 +15,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center gap-3">
             <img
               src={logoImage}
-              alt="Sanyu for the Needy"
+              alt="Sanyukako"
               className="navbar-logo w-auto"
             />
             <span className="navbar-text d-flex">
@@ -51,31 +51,33 @@ export function Navbar() {
                 <ChevronDown className="w-4 h-4" />
               </Link>
               {aboutMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
-                  <Link
-                    to="/mission"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Mission
-                  </Link>
-                  <Link
-                    to="/vision"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Vision
-                  </Link>
-                  <Link
-                    to="/team"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Our Team
-                  </Link>
-                  <Link
-                    to="/impact"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Our Impact
-                  </Link>
+                <div className="absolute top-full left-0 w-64 pt-2">
+                  <div className="bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                    <Link
+                      to="/mission"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Mission
+                    </Link>
+                    <Link
+                      to="/vision"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Vision
+                    </Link>
+                    <Link
+                      to="/team"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Our Team
+                    </Link>
+                    <Link
+                      to="/impact"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Our Impact
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -92,19 +94,21 @@ export function Navbar() {
                 <ChevronDown className="w-4 h-4" />
               </Link>
               {volunteerMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
-                  <Link
-                    to="/volunteering"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Volunteer Info
-                  </Link>
-                  <Link
-                    to="/partners"
-                    className="block px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    Partners
-                  </Link>
+                <div className="absolute top-full left-0 w-64 pt-2">
+                  <div className="bg-gray-900 rounded-md shadow-lg py-2 border border-gray-700">
+                    <Link
+                      to="/volunteering"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Volunteer Info
+                    </Link>
+                    <Link
+                      to="/partners"
+                      className="block px-5 py-3 text-white text-base hover:bg-gray-800 transition-colors"
+                    >
+                      Partners
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>

@@ -7,8 +7,8 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: "What is Sanyu for the Needy?",
-      answer: "Sanyu for the Needy is a foundation dedicated to supporting single mothers and vulnerable children in Uganda. We provide essential needs like clothes, shoes, books, and access to healthcare. 'Sanyu' means happiness in Luganda, reflecting our mission to bring joy and hope to those in need."
+      question: "What is Sanyukako?",
+      answer: "Sanyukako is a foundation dedicated to supporting single mothers and vulnerable children in Uganda. We provide essential needs like clothes, shoes, books, and access to healthcare. 'Sanyu' means happiness in Luganda, reflecting our mission to bring joy and hope to those in need."
     },
     {
       question: "Where do you operate?",
@@ -19,7 +19,7 @@ export function FAQ() {
       answer: "You can donate by clicking the 'Donate' button in our navigation menu or footer. We accept various forms of donations and every contribution, no matter the size, helps us provide essential support to families in need."
     },
     {
-      question: "Can I volunteer with Sanyu for the Needy?",
+      question: "Can I volunteer with Sanyukako?",
       answer: "Yes! We welcome volunteers who are passionate about making a difference. Please contact us through our contact form or email us at info@sanyufoundation.org to learn about volunteer opportunities."
     },
     {
@@ -31,11 +31,11 @@ export function FAQ() {
       answer: "You can contact us through our website to learn more about our ongoing projects and impact. We're always happy to share updates about how donations are making a difference in the lives of single mothers and children."
     },
     {
-      question: "Is Sanyu for the Needy a registered organization?",
+      question: "Is Sanyukako a registered organization?",
       answer: "For information about our registration and legal status, please contact us directly at info@sanyufoundation.org. We're committed to transparency and accountability in all our operations."
     },
     {
-      question: "Who founded Sanyu for the Needy?",
+      question: "Who founded Sanyukako?",
       answer: "The organization was founded by Mr. Edron, who was inspired by his own experiences growing up with a single mother and his late grandmother Sanyu. His personal journey of overcoming hardship drives our mission to help others in similar situations."
     }
   ];

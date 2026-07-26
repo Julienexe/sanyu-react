@@ -2167,8 +2167,10 @@ html {
 }
 
 .sanyukako {
-  font-family: "Playfair Display",serif;
+  font-family: Arial, sans-serif;
   font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 0.02em;
 }
 
 .desktop-menu-offset {
