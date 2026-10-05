@@ -3,6 +3,7 @@ export const GALLERY_QUERY = `
     title,
     images[]{
       asset,
+      "uploadedAt": asset->_createdAt,
       caption,
       categories[]->{
         title,

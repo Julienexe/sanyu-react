@@ -8,8 +8,12 @@ export async function fetchGallery() {
     return galleries
   }
 
+  const images = galleries
+    .flatMap((gallery) => gallery?.images ?? [])
+    .sort((a, b) => (b?.uploadedAt ?? '').localeCompare(a?.uploadedAt ?? ''))
+
   return {
     title: galleries.find((gallery) => gallery?.title)?.title ?? 'Gallery',
-    images: galleries.flatMap((gallery) => gallery?.images ?? []),
+    images,
   }
 }

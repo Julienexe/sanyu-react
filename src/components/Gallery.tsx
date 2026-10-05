@@ -33,6 +33,7 @@ export function Gallery() {
             .url(),
           // keep categories as array for multi-filter support
           categories: img.categories?.map((c: any) => c.title) ?? ['Uncategorized'],
+          uploaded_at: img.uploadedAt,
         }))
         setImages(mappedImages)
       })
