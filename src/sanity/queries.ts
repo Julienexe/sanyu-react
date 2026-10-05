@@ -1,5 +1,5 @@
 export const GALLERY_QUERY = `
-  *[_type == "gallery"][0]{
+  *[_type == "gallery"]{
     title,
     images[]{
       asset,
